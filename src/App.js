@@ -1,6 +1,8 @@
 import './App.css';
 import { useWallet, WalletStatus } from '@terra-money/wallet-provider';
 
+import Menu from './components/Menu';
+
 function App() {
   // current wallet status 
   const { status, connect, disconnect, availableConnectTypes } = useWallet();
@@ -44,7 +46,6 @@ function App() {
         </div>
 
       </header>
-
       <div>
         <img id="pub-img"
           src="https://simonpegg.net/wp-content/uploads/2013/07/theworldsendpub-707x1024.jpg"
@@ -52,6 +53,12 @@ function App() {
 
         />
       </div>
+      {/* Show the menu after connection */}
+      {status === WalletStatus.WALLET_CONNECTED && (
+        <div className="game-menu-container">
+          <Menu />
+        </div>
+      )}
       {renderConnectButton()}
     </main>
   );
