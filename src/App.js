@@ -50,7 +50,6 @@ function App() {
         <img id="pub-img"
           src="https://simonpegg.net/wp-content/uploads/2013/07/theworldsendpub-707x1024.jpg"
           alt="The World's end pub"
-
         />
       </div>
       {/* Show the menu after connection */}
