@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import * as query from '../contracts/query';
 import { useConnectedWallet } from '@terra-money/wallet-provider';
 import { useState, useEffect } from 'react';
-
+import WalletAddress from '../components/WalletAddress';
 
 const LeaderBoard = () => {
     const [scores, setScores] = useState();
@@ -49,6 +49,7 @@ const LeaderBoard = () => {
               <p>Only you can bring us to the last pub</p>
             </div>
           </Link>
+          <WalletAddress />
         </header>
         <div className="score-board-container">
             <h3>Scoreboard</h3>
