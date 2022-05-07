@@ -197,6 +197,12 @@ span {
     transform: translate(-50%, -50%);
 }
 
+#pretzel-img {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 #pub-img {
     width: 300px;
     max-width: 100%;
